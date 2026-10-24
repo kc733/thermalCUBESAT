@@ -1,0 +1,53 @@
+{
+  "parameters": {
+    "width_m": 0.1,
+    "length_m": 0.227,
+    "cell_width_m": 0.04015,
+    "cell_length_m": 0.08015,
+    "cells_per_lateral_face": 4,
+    "active_cell_area_m2": 0.003018,
+    "altitude_km": 500.0,
+    "solar_flux_W_m2": 1361.0,
+    "earth_ir_W_m2": 237.0,
+    "earth_albedo": 0.3,
+    "alpha_al": 0.35,
+    "epsilon_al": 0.1,
+    "alpha_pv": 0.9,
+    "epsilon_pv": 0.85,
+    "aluminum_k_W_mK": 167.0,
+    "aluminum_thickness_m": 0.002,
+    "pv_resistance_K_W": 2.0,
+    "aluminum_extra_interface_K_W": 0.0,
+    "pv_extra_interface_K_W": 0.0,
+    "pv_operating_efficiency": 0.29,
+    "internal_dissipation_W": 1.5
+  },
+  "scenarios": {
+    "sunlight": {
+      "internal_temperature_C": 24.141621085741917,
+      "powers_W": {
+        "solar_W": 20.4485479695,
+        "albedo_W": 0.3255337344294703,
+        "earth_ir_W": 4.067190632755548,
+        "electrical_W": 4.764697679999999,
+        "radiation_out_W": 21.576574656049278,
+        "internal_heat_W": 1.5,
+        "global_residual_W": 6.357403492529556e-10
+      },
+      "max_residual_W": 9.159889513554731e-11
+    },
+    "eclipse": {
+      "internal_temperature_C": -61.775436590087736,
+      "powers_W": {
+        "solar_W": 0.0,
+        "albedo_W": 0.0,
+        "earth_ir_W": 4.067190632755548,
+        "electrical_W": 0.0,
+        "radiation_out_W": 5.567190632623714,
+        "internal_heat_W": 1.5,
+        "global_residual_W": 1.318332110145093e-10
+      },
+      "max_residual_W": 2.026109835462364e-11
+    }
+  }
+}
